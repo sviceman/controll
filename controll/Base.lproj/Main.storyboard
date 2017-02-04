@@ -663,7 +663,7 @@
                 </customObject>
                 <menu autoenablesItems="NO" id="sHf-kK-iEi">
                     <items>
-                        <menuItem title="Info" id="yu9-XL-tff">
+                        <menuItem title="Info" enabled="NO" id="yu9-XL-tff">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <connections>
                                 <segue destination="B8D-0N-5wS" kind="show" id="pqc-pD-7o8"/>
@@ -699,8 +699,8 @@
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Info" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA" customClass="NSPanel">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES"/>
-                        <rect key="contentRect" x="1200" y="757" width="480" height="165"/>
+                        <windowPositionMask key="initialPositionMask" rightStrut="YES" topStrut="YES"/>
+                        <rect key="contentRect" x="1200" y="862" width="480" height="165"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>

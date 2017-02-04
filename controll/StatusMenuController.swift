@@ -20,7 +20,7 @@ class StatusMenuController: NSObject {
         //statusItem.image = icon
         statusItem.title = "I2PD"
         statusItem.menu = statusMenu
-        
+        statusItem.menu?.item(at: 0)?.isEnabled = false
         
     }
     @IBAction func StopI2PD(_ sender: NSMenuItem) {
@@ -28,10 +28,13 @@ class StatusMenuController: NSObject {
         stopTimer()
         statusItem.menu?.item(at: 3)?.isEnabled = false
         statusItem.menu?.item(at: 2)?.isEnabled = true
+        blackTitle()
+        statusItem.menu?.item(at: 0)?.isEnabled = false
     }
     @IBAction func StartI2PD(_ sender: NSMenuItem) {
         i2pcontrol.startDaemon()
-        yellowTitle()
+        Settings.status = "0"
+        //yellowTitle()
         //statusMenu.item(at: 2)?.isEnabled = false
         //statusItem.
         //print(statusMenu.item(at: 2)?.isEnabled)
@@ -41,6 +44,7 @@ class StatusMenuController: NSObject {
         //var timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.isConnected), userInfo: nil, repeats: true);
         statusItem.menu?.item(at: 3)?.isEnabled = true
         startTimer()
+        statusItem.menu?.item(at: 0)?.isEnabled = true
     }
     func startTimer() {
         let queue = DispatchQueue(label: "com.i2pd.control.timer")  // you can also use `DispatchQueue.main`, if you want
