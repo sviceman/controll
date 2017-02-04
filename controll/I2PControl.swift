@@ -142,8 +142,8 @@ class I2PControl:NSObject{
         ]
         
         i2pcreq(parameters: parameters) { responseObject, error in
-            let json = JSON(responseObject as Any)
-            let Shutdown = json["result","Shutdown"].stringValue
+            //let json = JSON(responseObject as Any)
+            //let Shutdown = json["result","Shutdown"].stringValue
             //self.version.stringValue = i2pdv
             NSApplication.shared().terminate(self)
             //print(json)
