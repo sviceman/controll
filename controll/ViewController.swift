@@ -8,6 +8,11 @@
 
 import Cocoa
 import Alamofire
+
+
+
+var UpdateTime: DispatchSourceTimer?
+
 let i2pcontrol = I2PControl()
 class ViewController: NSViewController {
 
@@ -30,21 +35,21 @@ class ViewController: NSViewController {
     
     }
     func UpdateInfo() {
-        let queue = DispatchQueue(label: "com.i2pd.control.info")  // you can also use `DispatchQueue.main`, if you want
-        timer = DispatchSource.makeTimerSource(queue: queue)
-        timer!.scheduleRepeating(deadline: .now(), interval: .seconds(5))
-        timer!.setEventHandler { [weak self] in
+        let queue = DispatchQueue.main  // you can also use `DispatchQueue.main`, if you want
+        UpdateTime = DispatchSource.makeTimerSource(queue: queue)
+        UpdateTime!.scheduleRepeating(deadline: .now(), interval: .seconds(10))
+        UpdateTime!.setEventHandler { [weak self] in
             //self?.version.text = Settings.version
             self?.updateInfo()
             
             
         }
-        timer!.resume()
+        UpdateTime!.resume()
     }
     
     func stopUpdateInfo() {
-        timer?.cancel()
-        timer = nil
+        UpdateTime?.cancel()
+        UpdateTime = nil
     }
     
     deinit {
@@ -59,6 +64,7 @@ class ViewController: NSViewController {
         self.speedout.stringValue = Settings.outbound
         self.received.stringValue = Settings.received
         self.sent.stringValue = Settings.sent
+        self.netstatus.stringValue = Settings.netstatus
         print("Window refreshed")
     }
 

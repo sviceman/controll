@@ -39,6 +39,7 @@ class StatusMenuController: NSObject {
         //print(statusMenu.item(at: 2)?.isEnabled)
         //statusMenu.item(at: 2).isEnabled = false
         //var timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.isConnected), userInfo: nil, repeats: true);
+        statusItem.menu?.item(at: 3)?.isEnabled = true
         startTimer()
     }
     func startTimer() {
