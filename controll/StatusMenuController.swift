@@ -71,8 +71,7 @@ class StatusMenuController: NSObject {
         statusItem.attributedTitle = NSAttributedString(string: "I2PD", attributes: [ NSForegroundColorAttributeName : NSColor.green, NSParagraphStyleAttributeName : style ])
     }
     func blackTitle() {
-        let style = NSMutableParagraphStyle()
-        statusItem.attributedTitle = NSAttributedString(string: "I2PD", attributes: [ NSForegroundColorAttributeName : NSColor.black, NSParagraphStyleAttributeName : style ])
+        statusItem.title = "I2PD"
     }
     func yellowTitle() {
         let style = NSMutableParagraphStyle()
@@ -82,14 +81,14 @@ class StatusMenuController: NSObject {
     func isConnected(){
         i2pcontrol.get_all()
         if Settings.status == "1"{
-            print ("I2pD is ready")
+            //print ("I2pD is ready")
             greenTitle()
         } else if Settings.status == "0" {
-            print ("I2pD is not ready")
+            //print ("I2pD is not ready")
             yellowTitle()
         } else {
             blackTitle()
-            print("I2PD is down")
+            //print("I2PD is down")
         }
     }
 

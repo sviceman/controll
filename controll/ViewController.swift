@@ -136,72 +136,34 @@ class ViewController: NSViewController {
         case "2":
             self.netstatus.stringValue="Firewalled"
         case "3":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="HIDDEN"
         case "4":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="WARNING"
         case "5":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="WARNING"
         case "6":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="WARNING"
         case "7":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="WARNING"
         case "8":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="ERROR"
         case "9":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="ERROR"
         case "10":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="ERROR"
         case "11":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="ERROR"
         case "12":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="ERROR"
         case "13":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="ERROR"
         case "14":
-            self.netstatus.stringValue="Firewalled"
+            self.netstatus.stringValue="ERROR"
             
         default:
             self.netstatus.stringValue="Connecting"
         }
-        /*
-        switch (Int(Settings.status)) {
-        case ?0:
-            self.status.stringValue="OK";
-            break;
-        case 1:
-            self.status.stringValue="Testing";
-            break;
-        case 2:
-            self.status.stringValue="FIREWALLED";
-            break;
-        case 3:
-            self.status.stringValue="HIDDEN";
-        case 4:
-            self.status.stringValue="WARN";
-        case 5:
-            self.status.stringValue="WARN";
-        case 6:
-            self.status.stringValue="WARN";
-        case 7:
-            self.status.stringValue="WARN";
-        case 8:
-            self.status.stringValue="ERROR";
-        case 9:
-            self.status.stringValue="ERROR";
-        case 10:
-            self.status.stringValue="ERROR";
-        case 11:
-            self.status.stringValue="ERROR";
-        case 12:
-            self.status.stringValue="ERROR";
-        case 13:
-            self.status.stringValue="ERROR";
-        case 14:
-            self.status.stringValue="ERROR";
-            
-        default:
-            self.status.stringValue="Connecting";
- */
+        
         self.success.stringValue = Settings.successrate
         self.success.stringValue = self.success.stringValue+" %"
         self.speedin.stringValue = String(Int(Settings.inbound)!/1024)
@@ -215,7 +177,7 @@ class ViewController: NSViewController {
         //self.netstatus.stringValue = Settings.netstatus
         let uptimeTime = convertTime(miliseconds: Int(Settings.uptime)!)
         self.uptime.stringValue = uptimeTime
-        print("Window refreshed")
+        //print("Window refreshed")
     }
 
     override func viewDidAppear() {
