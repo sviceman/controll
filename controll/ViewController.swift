@@ -164,32 +164,35 @@ class ViewController: NSViewController {
             self.netstatus.stringValue="Connecting"
         }
         
-        self.success.stringValue = Settings.successrate
+        self.success?.stringValue = Settings.successrate
         self.success.stringValue = self.success.stringValue+" %"
-        self.speedin.stringValue = String(Int(Settings.inbound)!/1024)
+        self.speedin?.stringValue = String(Int(Settings.inbound)!/1024)
         self.speedin.stringValue = self.speedin.stringValue+" kb/s"
-        self.speedout.stringValue = String(Int(Settings.outbound)!/1024)
+        self.speedout?.stringValue = String(Int(Settings.outbound)!/1024)
         self.speedout.stringValue = self.speedout.stringValue+" kb/s"
-        self.received.stringValue = String(Int(Settings.received)!/1024)
+        self.received?.stringValue = String(Int(Settings.received)!/1024)
         self.received.stringValue = self.received.stringValue+" kb"
-        self.sent.stringValue = String(Int(Settings.sent)!/1024)
+        self.sent?.stringValue = String(Int(Settings.sent)!/1024)
         self.sent.stringValue = self.sent.stringValue+" kb"
         //self.netstatus.stringValue = Settings.netstatus
         let uptimeTime = convertTime(miliseconds: Int(Settings.uptime)!)
         self.uptime.stringValue = uptimeTime
         //print("Window refreshed")
+        
     }
 
     override func viewDidAppear() {
-        print("Window opened")
+        //print("Window opened")
+        //statusItem.menu?.item(at: 0)?.isEnabled = false
         UpdateInfo()
         //NSStatusItem.menu?.item(at: 1)?.isEnabled = false
         
     }
     override func viewWillDisappear() {
         stopUpdateInfo()
-        print("Window closed")
+        //print("Window closed")
         //NSStatusItem.menu?.item(at: 1)?.isEnabled = true
+        //statusItem.menu?.item(at: 0)?.isEnabled = true
     }
     override var representedObject: Any? {
         didSet {

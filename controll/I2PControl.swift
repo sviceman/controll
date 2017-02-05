@@ -11,18 +11,18 @@ import Alamofire
 import Foundation
 //import SwiftyJSON
 struct Settings {
-    static var uptime = String();
-    static var version = String();
-    static var knownpeers = String();
-    static var activepeers = String();
-    static var inbound = String();
-    static var outbound = String();
-    static var successrate = String();
-    static var received = String();
-    static var sent = String();
-    static var status = String();
-    static var participating = String();
-    static var netstatus = String();
+    static var uptime:String = "0";
+    static var version:String = "0";
+    static var knownpeers:String = "0";
+    static var activepeers:String = "0";
+    static var inbound:String = "0";
+    static var outbound:String = "0";
+    static var successrate:String = "0";
+    static var received:String = "0";
+    static var sent:String = "0";
+    static var status:String = "0";
+    static var participating:String = "0";
+    static var netstatus:String = "0";
     static var isEnabled = Bool();
 }
 
@@ -90,6 +90,19 @@ class I2PControl:NSObject{
             let json = JSON(responseObject as Any)
             //let i2pdv = json["result","i2p.router.version"].stringValue
             //self.version.stringValue = i2pdv
+            Settings.version = "0"
+            Settings.uptime = "0"
+            Settings.status = "0"
+            Settings.knownpeers = "0"
+            Settings.activepeers = "0"
+            Settings.inbound = "0"
+            Settings.outbound = "0"
+            Settings.netstatus = "0"
+            Settings.participating = "0"
+            Settings.successrate = "0"
+            Settings.received = "0"
+            Settings.sent = "0"
+            
             Settings.version = json["result","i2p.router.version"].stringValue
             Settings.uptime = json["result","i2p.router.uptime"].stringValue
             Settings.status = json["result","i2p.router.status"].stringValue
