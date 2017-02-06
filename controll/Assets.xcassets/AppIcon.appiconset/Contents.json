@@ -3,7 +3,7 @@
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "i2pd_browser_icon_v3-5.png",
+      "filename" : "i2pd_browser_logo_16px.png",
       "scale" : "1x"
     },
     {
@@ -14,7 +14,7 @@
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "i2pd_browser_icon_v3-4.png",
+      "filename" : "i2pd_browser_logo_32px.png",
       "scale" : "1x"
     },
     {
@@ -25,7 +25,7 @@
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "i2pd_browser_icon_v3-1.png",
+      "filename" : "i2pd_logo_64px.png",
       "scale" : "1x"
     },
     {
@@ -36,7 +36,7 @@
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "i2pd_browser_icon_v3-0.png",
+      "filename" : "i2pd_logo_256px.png",
       "scale" : "1x"
     },
     {
@@ -45,8 +45,9 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "mac",
       "size" : "512x512",
+      "idiom" : "mac",
+      "filename" : "i2pd_logo_512px.png",
       "scale" : "1x"
     },
     {
