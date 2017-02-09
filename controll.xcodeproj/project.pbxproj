@@ -20,7 +20,7 @@
 		1E8E24991E440C9E00E2B3FC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E24981E440C9E00E2B3FC /* SwiftyJSON.swift */; };
 		1E8E24A01E44D5C100E2B3FC /* tunnel.conf in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E249F1E44D5C100E2B3FC /* tunnel.conf */; };
 		1E8E24A21E45848500E2B3FC /* README in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E24A11E45848500E2B3FC /* README */; };
-		1EEC55E41E4C1DB900C119DA /* i2pd in Resources */ = {isa = PBXBuildFile; fileRef = 1EEC55E31E4C1DB900C119DA /* i2pd */; };
+		1EEC55E61E4C1F3F00C119DA /* i2pd in Resources */ = {isa = PBXBuildFile; fileRef = 1EEC55E51E4C1F3F00C119DA /* i2pd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,7 +146,7 @@
 		1E8E249F1E44D5C100E2B3FC /* tunnel.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tunnel.conf; sourceTree = "<group>"; };
 		1E8E24A11E45848500E2B3FC /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		1EEC55D51E4C0B7300C119DA /* i2pd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = i2pd; sourceTree = "<group>"; };
-		1EEC55E31E4C1DB900C119DA /* i2pd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = i2pd; path = i2pd/i2pd; sourceTree = "<group>"; };
+		1EEC55E51E4C1F3F00C119DA /* i2pd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = i2pd; path = i2pd/i2pd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,7 +178,7 @@
 		1E8E24371E43C6E500E2B3FC = {
 			isa = PBXGroup;
 			children = (
-				1EEC55E31E4C1DB900C119DA /* i2pd */,
+				1EEC55E51E4C1F3F00C119DA /* i2pd */,
 				1E8E24A11E45848500E2B3FC /* README */,
 				1E8E249F1E44D5C100E2B3FC /* tunnel.conf */,
 				1E8E24791E43F80000E2B3FC /* Alamofire.xcodeproj */,
@@ -446,7 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EEC55E41E4C1DB900C119DA /* i2pd in Resources */,
+				1EEC55E61E4C1F3F00C119DA /* i2pd in Resources */,
 				1E8E24A21E45848500E2B3FC /* README in Resources */,
 				1E8E24481E43C6E500E2B3FC /* Assets.xcassets in Resources */,
 				1E8E24A01E44D5C100E2B3FC /* tunnel.conf in Resources */,
