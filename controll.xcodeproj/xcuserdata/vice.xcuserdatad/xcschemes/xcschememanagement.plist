@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>i2pd.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>1E8E245B1E43C6E500E2B3FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1EEC55DC1E4C1A1600C119DA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

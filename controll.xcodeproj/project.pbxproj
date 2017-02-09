@@ -20,6 +20,7 @@
 		1E8E24991E440C9E00E2B3FC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E24981E440C9E00E2B3FC /* SwiftyJSON.swift */; };
 		1E8E24A01E44D5C100E2B3FC /* tunnel.conf in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E249F1E44D5C100E2B3FC /* tunnel.conf */; };
 		1E8E24A21E45848500E2B3FC /* README in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E24A11E45848500E2B3FC /* README */; };
+		1EEC55E41E4C1DB900C119DA /* i2pd in Resources */ = {isa = PBXBuildFile; fileRef = 1EEC55E31E4C1DB900C119DA /* i2pd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,13 @@
 			remoteGlobalIDString = 4DD67C0A1A5C55C900ED2280;
 			remoteInfo = "Alamofire macOS";
 		};
+		1EEC55E01E4C1B8700C119DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E8E24381E43C6E500E2B3FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EEC55DC1E4C1A1600C119DA;
+			remoteInfo = i2pd;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -138,6 +146,7 @@
 		1E8E249F1E44D5C100E2B3FC /* tunnel.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tunnel.conf; sourceTree = "<group>"; };
 		1E8E24A11E45848500E2B3FC /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		1EEC55D51E4C0B7300C119DA /* i2pd */ = {isa = PBXFileReference; lastKnownFileType = folder; path = i2pd; sourceTree = "<group>"; };
+		1EEC55E31E4C1DB900C119DA /* i2pd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = i2pd; path = i2pd/i2pd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +178,7 @@
 		1E8E24371E43C6E500E2B3FC = {
 			isa = PBXGroup;
 			children = (
+				1EEC55E31E4C1DB900C119DA /* i2pd */,
 				1E8E24A11E45848500E2B3FC /* README */,
 				1E8E249F1E44D5C100E2B3FC /* tunnel.conf */,
 				1E8E24791E43F80000E2B3FC /* Alamofire.xcodeproj */,
@@ -247,6 +257,23 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		1EEC55DC1E4C1A1600C119DA /* i2pd */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION) ";
+			buildConfigurationList = 1EEC55DD1E4C1A1600C119DA /* Build configuration list for PBXLegacyTarget "i2pd" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = ./i2pd/;
+			dependencies = (
+			);
+			name = i2pd;
+			passBuildSettingsInEnvironment = 1;
+			productName = i2pd;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		1E8E243F1E43C6E500E2B3FC /* controll */ = {
 			isa = PBXNativeTarget;
@@ -261,6 +288,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1EEC55E11E4C1B8700C119DA /* PBXTargetDependency */,
 				1E8E24951E43F9A500E2B3FC /* PBXTargetDependency */,
 			);
 			name = controll;
@@ -328,6 +356,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1E8E243F1E43C6E500E2B3FC;
 					};
+					1EEC55DC1E4C1A1600C119DA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 1E8E243B1E43C6E500E2B3FC /* Build configuration list for PBXProject "controll" */;
@@ -350,6 +382,7 @@
 			projectRoot = "";
 			targets = (
 				1E8E243F1E43C6E500E2B3FC /* controll */,
+				1EEC55DC1E4C1A1600C119DA /* i2pd */,
 				1E8E24501E43C6E500E2B3FC /* controllTests */,
 				1E8E245B1E43C6E500E2B3FC /* controllUITests */,
 			);
@@ -413,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEC55E41E4C1DB900C119DA /* i2pd in Resources */,
 				1E8E24A21E45848500E2B3FC /* README in Resources */,
 				1E8E24481E43C6E500E2B3FC /* Assets.xcassets in Resources */,
 				1E8E24A01E44D5C100E2B3FC /* tunnel.conf in Resources */,
@@ -482,6 +516,11 @@
 			isa = PBXTargetDependency;
 			name = "Alamofire macOS";
 			targetProxy = 1E8E24941E43F9A500E2B3FC /* PBXContainerItemProxy */;
+		};
+		1EEC55E11E4C1B8700C119DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EEC55DC1E4C1A1600C119DA /* i2pd */;
+			targetProxy = 1EEC55E01E4C1B8700C119DA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -681,6 +720,29 @@
 			};
 			name = Release;
 		};
+		1EEC55DE1E4C1A1600C119DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1EEC55DF1E4C1A1600C119DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -719,6 +781,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1EEC55DD1E4C1A1600C119DA /* Build configuration list for PBXLegacyTarget "i2pd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EEC55DE1E4C1A1600C119DA /* Debug */,
+				1EEC55DF1E4C1A1600C119DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
