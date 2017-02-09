@@ -16,7 +16,7 @@
 		1E8E246F1E43D9F400E2B3FC /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E246E1E43D9F400E2B3FC /* StatusMenuController.swift */; };
 		1E8E24781E43E66100E2B3FC /* I2PControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E24771E43E66100E2B3FC /* I2PControl.swift */; };
 		1E8E24921E43F9A500E2B3FC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8E24891E43F80000E2B3FC /* Alamofire.framework */; };
-		1E8E24931E43F9A500E2B3FC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8E24891E43F80000E2B3FC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E8E24931E43F9A500E2B3FC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8E24891E43F80000E2B3FC /* Alamofire.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1E8E24991E440C9E00E2B3FC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E24981E440C9E00E2B3FC /* SwiftyJSON.swift */; };
 		1E8E24A01E44D5C100E2B3FC /* tunnel.conf in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E249F1E44D5C100E2B3FC /* tunnel.conf */; };
 		1E8E24A21E45848500E2B3FC /* README in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E24A11E45848500E2B3FC /* README */; };
