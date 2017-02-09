@@ -737,6 +737,7 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                                 <connections>
+                                    <action selector="version:" target="XfG-lQ-9wD" id="Q9Z-re-Gho"/>
                                     <outlet property="delegate" destination="XfG-lQ-9wD" id="Gml-V6-Lce"/>
                                 </connections>
                             </textField>
