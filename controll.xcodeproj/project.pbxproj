@@ -18,7 +18,6 @@
 		1E8E24921E43F9A500E2B3FC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8E24891E43F80000E2B3FC /* Alamofire.framework */; };
 		1E8E24931E43F9A500E2B3FC /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8E24891E43F80000E2B3FC /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1E8E24991E440C9E00E2B3FC /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E24981E440C9E00E2B3FC /* SwiftyJSON.swift */; };
-		1E8E249E1E44D59A00E2B3FC /* i2pd in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E249D1E44D59A00E2B3FC /* i2pd */; };
 		1E8E24A01E44D5C100E2B3FC /* tunnel.conf in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E249F1E44D5C100E2B3FC /* tunnel.conf */; };
 		1E8E24A21E45848500E2B3FC /* README in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E24A11E45848500E2B3FC /* README */; };
 /* End PBXBuildFile section */
@@ -136,7 +135,6 @@
 		1E8E24771E43E66100E2B3FC /* I2PControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = I2PControl.swift; sourceTree = "<group>"; };
 		1E8E24791E43F80000E2B3FC /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		1E8E24981E440C9E00E2B3FC /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
-		1E8E249D1E44D59A00E2B3FC /* i2pd */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = i2pd; sourceTree = "<group>"; };
 		1E8E249F1E44D5C100E2B3FC /* tunnel.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tunnel.conf; sourceTree = "<group>"; };
 		1E8E24A11E45848500E2B3FC /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,7 +170,6 @@
 			children = (
 				1E8E24A11E45848500E2B3FC /* README */,
 				1E8E249F1E44D5C100E2B3FC /* tunnel.conf */,
-				1E8E249D1E44D59A00E2B3FC /* i2pd */,
 				1E8E24791E43F80000E2B3FC /* Alamofire.xcodeproj */,
 				1E8E24421E43C6E500E2B3FC /* controll */,
 				1E8E24541E43C6E500E2B3FC /* controllTests */,
@@ -409,7 +406,6 @@
 				1E8E24A21E45848500E2B3FC /* README in Resources */,
 				1E8E24481E43C6E500E2B3FC /* Assets.xcassets in Resources */,
 				1E8E24A01E44D5C100E2B3FC /* tunnel.conf in Resources */,
-				1E8E249E1E44D59A00E2B3FC /* i2pd in Resources */,
 				1E8E244B1E43C6E500E2B3FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -690,6 +686,7 @@
 				1E8E24671E43C6E500E2B3FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E8E24681E43C6E500E2B3FC /* Build configuration list for PBXNativeTarget "controllTests" */ = {
 			isa = XCConfigurationList;
@@ -698,6 +695,7 @@
 				1E8E246A1E43C6E500E2B3FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E8E246B1E43C6E500E2B3FC /* Build configuration list for PBXNativeTarget "controllUITests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +704,7 @@
 				1E8E246D1E43C6E500E2B3FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

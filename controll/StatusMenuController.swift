@@ -21,6 +21,7 @@ class StatusMenuController: NSObject {
         statusItem.title = "I2PD"
         statusItem.menu = statusMenu
         statusItem.menu?.item(at: 0)?.isEnabled = false
+        statusItem.menu?.item(at: 3)?.isEnabled = false
         
     }
     @IBAction func StopI2PD(_ sender: NSMenuItem) {

@@ -10,7 +10,6 @@ import Cocoa
 import Alamofire
 
 
-
 var UpdateTime: DispatchSourceTimer?
 
 let i2pcontrol = I2PControl()
@@ -43,6 +42,12 @@ extension TimeInterval {
 
 class ViewController: NSViewController {
 
+    @IBAction func openLink(_ sender: NSTextField) {
+        if let url = URL(string: "https://www.google.com"), NSWorkspace.shared().open(url) {
+            print("default browser was successfully opened")
+        }
+    }
+    @IBOutlet weak var cLink: NSTextField!
     
     //let statusItem = StatusMenuController.statusItem.self
     @IBOutlet weak var version: NSTextField!
@@ -57,7 +62,8 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         i2pcontrol.get_all()
-        print("Fdsfsd",Settings.status)
+
+        
         // Do any additional setup after loading the view.
     
     }
