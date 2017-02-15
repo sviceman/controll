@@ -171,7 +171,7 @@ class I2PControl:NSObject{
         task.launchPath = Bundle.main.resourcePath!+"/i2pd"
         let tunnconf = "--tunconf="+Bundle.main.resourcePath!+"/tunnel.conf"
     
-        task.arguments = ["--i2pcontrol.enabled=1","--loglevel=error",tunnconf,"--daemon"]
+        task.arguments = ["--i2pcontrol.enabled=1","–-sam.enabled=1","--loglevel=error",tunnconf]
         task.launch()
     
     }

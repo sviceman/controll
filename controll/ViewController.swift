@@ -62,7 +62,6 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         i2pcontrol.get_all()
-
         
         // Do any additional setup after loading the view.
     
