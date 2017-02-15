@@ -186,6 +186,7 @@ class ViewController: NSViewController {
         
     }
 
+
     override func viewDidAppear() {
         //print("Window opened")
         //statusItem.menu?.item(at: 0)?.isEnabled = false
